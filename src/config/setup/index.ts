@@ -1,13 +1,8 @@
-/* 
--> ler arquivos X
--> extrair os manifestos X
--> validar os manifestos
--> montar objetos
-*/
-
 import { readManifests } from './read-manifests'
 import { validateProperties } from './validate-properties'
 import { validateManifest } from './validate-manifest'
+import { buildMenu } from './build-menu'
+import { buildRoutes } from './build-routes'
 
 interface Params {
   rootPath: string
@@ -28,5 +23,8 @@ export const setup = async (params: Params) => {
     properties.forEach(([key, value]) => validateProperties[key as keyof typeof validateProperties]?.(value, manifest))
   })
 
-  console.log({ manifests })
+  let menu = buildMenu(manifests)
+  let routes = buildRoutes(manifests)
+
+  return { menu, routes }
 }

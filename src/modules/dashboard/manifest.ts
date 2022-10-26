@@ -7,7 +7,7 @@ export const manifest: ModuleManifest = {
   },
   menu: {
     key: '@dashboard',
-    name: 'dashboard',
+    name: 'Dashboard',
     position: 0,
   },
 }

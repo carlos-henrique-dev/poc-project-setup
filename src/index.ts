@@ -1,9 +1,11 @@
 import { setup } from './config/setup'
 
 const start = async () => {
- await setup({
+  const setupResult = await setup({
     rootPath: './src',
   })
+
+  console.log(setupResult)
 }
 
 start()

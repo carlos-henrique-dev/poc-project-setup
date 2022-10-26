@@ -12,3 +12,9 @@ export interface MenuSettings {
   position: number
   permissions?: Permissions[]
 }
+
+export interface MenuItem {
+  key: `@${string}`
+  name: string
+  position?: number
+}

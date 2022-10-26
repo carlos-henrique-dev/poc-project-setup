@@ -9,7 +9,7 @@ export const manifest: ModuleManifest = {
   },
   menu: {
     key: '@costumers-list',
-    name: 'costumers',
+    name: 'Costumers',
     group: EMenuGroup.LISTING,
     position: 0,
     permissions: [Permissions.READ],

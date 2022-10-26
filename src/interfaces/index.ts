@@ -1,4 +1,4 @@
-export * from './menu-settings'
+export * from './menu'
 export * from './module-manifest'
 export * from './permissions'
-export * from './route-settings'
+export * from './route'
