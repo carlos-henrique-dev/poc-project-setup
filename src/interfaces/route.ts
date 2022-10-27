@@ -1,5 +1,6 @@
 export interface RouteSettings {
   path: `/${string}`
+  element: any | null
 }
 
 export interface RouteItem {

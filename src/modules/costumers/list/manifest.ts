@@ -1,3 +1,4 @@
+import { ListCostumers } from '.'
 import { EMenuGroup, ModuleManifest, Permissions } from '../../../interfaces'
 
 export const manifest: ModuleManifest = {
@@ -6,6 +7,7 @@ export const manifest: ModuleManifest = {
   permissions: [Permissions.READ],
   route: {
     path: '/costumers/list',
+	element: ListCostumers
   },
   menu: {
     key: '@costumers-list',

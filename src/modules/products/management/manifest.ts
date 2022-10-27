@@ -1,3 +1,4 @@
+import { ManageProducts } from '.'
 import { EMenuGroup, ModuleManifest, Permissions } from '../../../interfaces'
 
 export const manifest: ModuleManifest = {
@@ -6,6 +7,7 @@ export const manifest: ModuleManifest = {
   permissions: [Permissions.CREATE, Permissions.UPDATE, Permissions.READ, Permissions.DELETE],
   route: {
     path: '/categories/management',
+	element: ManageProducts
   },
   menu: {
     key: '@categories-management',

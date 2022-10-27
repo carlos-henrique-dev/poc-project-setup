@@ -74,7 +74,7 @@ Após a leitura e validação dos arquivos, o sistema loga um resultado simuland
     {
       "name": "@categories-management",
       "path": "/categories/management",
-      "element": "Name: @categories-management => Path: /categories/management"
+      "element":  "[Function: CategoriesManagement]"
     }
   ]
 }
